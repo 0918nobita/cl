@@ -5,5 +5,5 @@
 (defun validation (list)
   (equal 1 (length (remove-duplicates (mapcar #'length list)))))
 
-(print (validation a))
-(print (validation b))
+(print (validation a)) ; T
+(print (validation b)) ; NIL
