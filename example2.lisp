@@ -16,3 +16,11 @@
 
 (updateHead a 10)
 (print a)  ; (10 2 3)
+
+; 2, 3 番目の要素を変更する
+(defun update23 (list 2th 3th)
+  (setf (cadr list) 2th)
+  (setf (caddr list) 3th))
+
+(update23 a 20 30)
+(print a)  ; (10 20 30)
