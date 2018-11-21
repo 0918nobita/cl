@@ -35,3 +35,6 @@
 
 (defun isMultipleOf3 (x) (= (mod x 3) 0))
 (print (list (isMultipleOf3 3) (isMultipleOf3 5)))  ; (T NIL)
+
+(defun isMultipleOf4 (x) (= (mod x 4) 0))
+(print (list (isMultipleOf4 4) (isMultipleOf3 5)))  ; (T NIL)
