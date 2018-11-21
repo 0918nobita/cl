@@ -41,3 +41,7 @@
 
 (defun foo (x y) (= (mod x y) 0))
 (print (list (foo 6 2) (foo 5 3)))  ; (T NIL)
+
+; n (自然数) の平方根以下の最大の整数を返す
+(defun my-root (n) (floor (sqrt n)))
+(print (my-root 10))
