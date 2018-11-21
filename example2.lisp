@@ -32,3 +32,6 @@
 
 (defun isEven (x) (= (mod x 2) 0))
 (print (list (isEven 3) (isEven 4)))  ; (NIL T)
+
+(defun isMultipleOf3 (x) (= (mod x 3) 0))
+(print (list (isMultipleOf3 3) (isMultipleOf3 5)))  ; (T NIL)
