@@ -45,3 +45,11 @@
 ; n (自然数) の平方根以下の最大の整数を返す
 (defun my-root (n) (floor (sqrt n)))
 (print (my-root 10))
+
+; 2 から n までの数を要素に持つリストを生成する
+(defun mklist (n)
+  (if (< n 2)
+    nil
+    (nconc (mklist (- n 1)) (list n))))
+
+(print (mklist 5))  ; (2 3 4 5)
