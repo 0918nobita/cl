@@ -53,3 +53,17 @@
     (nconc (mklist (- n 1)) (list n))))
 
 (print (mklist 5))  ; (2 3 4 5)
+
+(defun mapfoo (n)
+  (mapcar
+    #'(lambda (x) (foo n x))
+    (mklist (my-root n))))
+
+(print (mapfoo 10))
+(print (mapfoo 7))
+
+; 素数判定
+(defun primep (n) (not (member t (mapfoo n))))
+
+(print (primep 7))  ; T
+(print (primep 8))  ; NIL
