@@ -29,3 +29,6 @@
 
 (updateAt a 0 100)
 (print a)  ; (100 20 30)
+
+(defun isEven (x) (= (mod x 2) 0))
+(print (list (isEven 3) (isEven 4)))  ; (NIL T)
