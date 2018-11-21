@@ -24,3 +24,8 @@
 
 (update23 a 20 30)
 (print a)  ; (10 20 30)
+
+(defun updateAt (list index value) (setf (nth index list) value))
+
+(updateAt a 0 100)
+(print a)  ; (100 20 30)
